@@ -42,7 +42,7 @@ const useWeatherStore = defineStore('weatherStore', {
       this.weather = this.weather.filter((el) => this.cities.includes(el.id))
     },
     removeCity(id) {
-      this.weather = this.weather.filter((el) => el !== id)
+      this.weather = this.weather.filter((el) => el.id !== id)
       this.cities = this.cities.filter((el) => el !== id)
     }
   },
