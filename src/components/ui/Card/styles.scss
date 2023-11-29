@@ -1,0 +1,60 @@
+$--card-width: 350px;
+$--card-height: 270px;
+$--small-card-width: 250px;
+$--small-card-height: 200px;
+
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  width: calc($--card-width + 100px);
+  height: calc($--card-height + 50px);
+  background-color: #f3ecec;
+
+  margin-right: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-shadow: 0px 13px 7px 6px rgba(188, 189, 204, 1);
+  -moz-box-shadow: 0px 13px 7px 6px rgba(188, 189, 204, 1);
+  box-shadow: 0px 13px 7px 6px rgba(188, 189, 204, 1);
+  position: relative;
+
+  @include breakpoint(medium) {
+    width: calc($--small-card-width + 100px);
+    height: calc($--small-card-height + 50px);
+    margin-right: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__favourite {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+}
+
+.night {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.radio {
+  display: flex;
+  &__item &__item {
+    margin-left: 5px;
+  }
+}
+.radio label,
+.radio input {
+  cursor: pointer;
+}

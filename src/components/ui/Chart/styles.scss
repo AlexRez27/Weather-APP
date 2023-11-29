@@ -1,0 +1,8 @@
+canvas {
+  width: $--card-width !important;
+  height: $--card-height !important;
+  @include breakpoint(medium) {
+    width: $--small-card-width !important;
+    height: $--small-card-height !important;
+  }
+}

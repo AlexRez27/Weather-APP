@@ -1,0 +1,29 @@
+{
+  "locale": {
+    "en": "Eng",
+    "ua": "Ukr"
+  },
+  "layout": {
+    "title": "Panda Team Test Assignment"
+  },
+  "home": {
+    "title": "Choose your city",
+    "card": {
+      "title": "Weather in ",
+      "day": "{n} day | {n} days"
+    },
+    "placeholder": { "default": "Search...", "max": "Maximum 5 cities" }
+  },
+  "modals": {
+    "delete": "Are you sure you want to delete this item?",
+    "noMoreFavourites": "For adding new city delete an existing one... because maximum is five",
+    "yes": "yes",
+    "no": "no",
+    "ok": "ok"
+  },
+  "favourites": {
+    "title": "Panda likes this cities the most",
+    "back": "Back to homepage",
+    "empty": "Sorry, it's empty here for now {emoji}"
+  }
+}
