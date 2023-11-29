@@ -13,7 +13,6 @@ import CardList from '@/components/CardList/index.vue'
 import { computed, onMounted, ref } from 'vue'
 import useWeatherStore from '@/stores/weather'
 import useUserLocation from '@/stores/ussersLocation'
-import UA from '@/jsons/UA.json'
 import FavouriteIcon from '@/components/icons/FavouriteIcon.vue'
 import { useRouter } from 'vue-router'
 import cities from '@/jsons/UA'
@@ -36,7 +35,7 @@ export default {
 
       isLoading.value = true
       await storeLocation.fetchUsersLocation()
-      const idx = UA.findIndex((city) => city.city === storeLocation.getUsersLocation)
+      const idx = cities.findIndex((city) => city.city === storeLocation.getUsersLocation)
       store.addCity(idx)
       isLoading.value = false
       storeWeather.removeFavourites()
