@@ -15,7 +15,7 @@ import useWeatherStore from '@/stores/weather'
 import useUserLocation from '@/stores/ussersLocation'
 import FavouriteIcon from '@/components/icons/FavouriteIcon.vue'
 import { useRouter } from 'vue-router'
-import cities from '@/jsons/UA'
+import cities from '@/jsons/ua'
 
 export default {
   name: 'HomePage',

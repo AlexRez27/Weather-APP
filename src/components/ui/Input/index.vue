@@ -42,7 +42,7 @@ import useWeatherStore from '@/stores/weather'
 import ButtonComponent from '@/components/ui/Button/index.vue'
 import CyrillicToTranslit from 'cyrillic-to-translit-js'
 import { useI18n } from 'vue-i18n'
-import Cities from '@/jsons/UA'
+import Cities from '@/jsons/ua'
 
 export default {
   name: 'InputComponent',
